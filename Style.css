@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #F1F1F1;
+}
+
+.header {
+    background: #222832;
+    color: #F1F1F1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: min-content;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border:0px solid #F7D655;
+    border-bottom-width: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 10px;
+    color: #F1F1F1;
+}
+
+.nav-link-home {
+    margin-left: auto;
+    padding: 10px;
+    color: #F1F1F1;
+}
+
+@media (max-width: 619px) {
+    .nav-link{
+        display: none;
+    }
+    .nav-link-home {
+        display: none;
+    }
+}
+
+.banner {
+    width: 100%;
+    background-image: url(images/Big\ Chet\ Web.png);
+    background-size: cover;
+    max-height: 350px;
+    margin-top: 70px;
+    height: 350px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 619px) {
+
+.HomeButton{
+    transition: transform .5s ease-in-out;
+}
+
+.HomeButton:hover {
+    transform: rotate(90deg);
+}
+
+.HomeButton:active{
+    background-color: aqua;
+}
+
+}
+
+.SubTitle{
+    text-align: center;
+    color: #E7A117;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.displayPhotographs{
+    text-align: center;
+    width: auto;
+}
+
+.Photographs{
+    border: 5px solid #F7D655;
+    border-radius: 10px; 
+    transition: scale 1s ease-in-out;
+}
+
+.Photographs:hover {
+    scale: 1.03;
+}
+
+@media (max-width: 1260px) {
+.Photographs {
+    width: 30%;
+    height: 30%;
+}
+}
+
+@media (max-width: 700px) {
+.Photographs {
+    width: 75%;
+    height: 75%;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+}
+
+}
+
+@media (min-width: 619px) {
+.photoGap{
+    display: none;
+}
+}
+
+.bottom {
+    color: #222832;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 350px) {
+.title {
+    font-size: x-large;
+}
+}
